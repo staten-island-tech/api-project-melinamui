@@ -3,5 +3,11 @@ import "./style.css";
 const URL = "https://api.quotable.io/random";
 
 async function getData(URL) {
-  const response = await fetch;
+  try {
+    const response = await fetch(URL);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
 }
+getData(URL);
