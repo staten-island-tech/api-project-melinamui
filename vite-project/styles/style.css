@@ -1,0 +1,8 @@
+@import url(variables.css);
+
+html,
+body,
+* {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697");
+  background-size: cover;
+}

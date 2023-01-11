@@ -1,22 +1,22 @@
-import "./style.css";
+import "../styles/style.css";
 
 const cat = "https://nekos.best/api/v2/neko";
 
 async function getData(cat) {
   try {
     const response = await fetch(cat);
-    if (response.status < 200 || response.statusn > 299) {
+    if (response.status < 200 || response.status > 299) {
       console.log(response.status);
       throw error(response);
     } else {
       const data = await response.json();
 
-      data.result.forEach((neko) => {
+      data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
           "afterbegin",
           ` <div class ="card">
-          <h1>${neko.artist_name}</h1>
           <img src="${neko.url}" alt ="">
+          <h1> Artist: ${neko.artist_name}</h1>
           </div>`
         );
       });
