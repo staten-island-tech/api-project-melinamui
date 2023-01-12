@@ -10,7 +10,7 @@ DOMSelectors.display.addEventListener("click", function () {
   getNeko();  
 });
 
-const getNeko = async function getData(cat) {
+let getNeko = async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
