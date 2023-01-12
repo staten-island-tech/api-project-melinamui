@@ -1,4 +1,6 @@
 import "../styles/style.css";
+import { DOMSelectors } from "./dom";
+console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697"
