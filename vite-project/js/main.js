@@ -3,6 +3,7 @@ import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
 DOMSelectors.getneko.addEventListener("click", function () {
+  DOMSelectors.display.innerHTML="";
   getData();  
 });
 
