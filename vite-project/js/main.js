@@ -4,9 +4,6 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-
-DOMSelectors.display.addEventListener("click", () => getData(cat), false);
-
 async function getData(cat) {
   try {
     const response = await fetch(cat);
@@ -32,3 +29,4 @@ async function getData(cat) {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
+getData(cat);
