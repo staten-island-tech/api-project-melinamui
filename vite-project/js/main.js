@@ -2,6 +2,10 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
+DOMSelectors.getneko.addEventListener("click", function () {
+  getData();  
+});
+
 const cat = "https://nekos.best/api/v2/neko";
 
 async function getData(cat) {
