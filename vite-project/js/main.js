@@ -30,5 +30,5 @@ DOMSelectors.getneko.addEventListener("click", async function getData(cat) {
     console.log("u suck");
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
-})
+});
 getData(cat);
