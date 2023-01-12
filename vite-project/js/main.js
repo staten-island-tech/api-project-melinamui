@@ -5,7 +5,7 @@ console.log(DOMSelectors);
 const cat = "https://nekos.best/api/v2/neko";
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697"
 
-async function getData(cat) {
+/*async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -30,4 +30,4 @@ async function getData(cat) {
     document.getElementById("display").textContent = "no neko for u";
   }
 }
-getData(cat);
+getData(cat);*/
