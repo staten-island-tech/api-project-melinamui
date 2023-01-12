@@ -4,6 +4,11 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
+DOMSelectors.getneko.addEventListener("submit", function () {
+  DOMSelectors.display.innerHTML="";
+  getData(cat);  
+});
+
 async function getData(cat) {
   try {
     const response = await fetch(cat);
