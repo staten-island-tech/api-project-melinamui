@@ -7,10 +7,10 @@ console.log(DOMSelectors);
 const cat = "https://nekos.best/api/v2/neko";
 
 DOMSelectors.display.addEventListener("click", function () {
-  getNeko();  
+  getData(cat);  
 });
 
-let getNeko = async function getData(cat) {
+async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
