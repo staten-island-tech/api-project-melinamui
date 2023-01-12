@@ -2,14 +2,11 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
-DOMSelectors.getneko.addEventListener("click", function () {
-  DOMSelectors.display.innerHTML="";
-  getData();  
-});
+
 
 const cat = "https://nekos.best/api/v2/neko";
 
-async function getData(cat) {
+DOMSelectors.getneko.addEventListener("click", async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -31,7 +28,7 @@ async function getData(cat) {
   } catch (error) {
     console.log(error);
     console.log("u suck");
-    document.getElementById("display").textContent = "no neko for u";
+    document.getElementById("display").textContent = "sorry, no neko for u";
   }
-}
+})
 getData(cat);
