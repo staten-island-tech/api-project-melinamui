@@ -17,7 +17,7 @@ async function getData(cat) {
           "afterbegin",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="">
-          <h1> Artist: ${neko.artist_name}</h1>
+          <h3> Artist: ${neko.artist_name}</h3>
           </div>`
         );
       });
