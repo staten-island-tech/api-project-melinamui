@@ -1,4 +1,4 @@
 const DOMSelectors = {
-    getneko: document.getElementsByClassName("getneko"),
+    getneko: document.getElementById("getneko"),
 };
 export { DOMSelectors };
