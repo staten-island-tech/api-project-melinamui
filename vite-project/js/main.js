@@ -8,6 +8,7 @@ const cat = "https://nekos.best/api/v2/neko";
 
 DOMSelectors.display.addEventListener("click", function () {
   getData(cat);
+  DOMSelectors.display.innerHTML="";
 });
 
 async function getData(cat) {
