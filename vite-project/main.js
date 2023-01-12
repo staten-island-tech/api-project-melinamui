@@ -1,4 +1,4 @@
-import "../styles/style.css";
+import "./styles/style.css";
 
 const cat = "https://nekos.best/api/v2/neko";
 
@@ -15,7 +15,7 @@ async function getData(cat) {
         document.getElementById("display").insertAdjacentHTML(
           "afterbegin",
           ` <div class ="card">
-          <img src="${neko.url}" alt ="">
+          <img class = "neko_image" src="${neko.url}" alt ="">
           <h1> Artist: ${neko.artist_name}</h1>
           </div>`
         );
