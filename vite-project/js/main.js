@@ -4,9 +4,11 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-const cat = "https://nekos.best/api/v2/neko";
+DOMSelectors.display.innerHTML = "";
+DOMSelectors.getneko.addEventListener("click", getData);
 
-async function getData(cat) {
+async function getData() {
+  const cat = "https://nekos.best/api/v2/neko";
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -17,7 +19,7 @@ async function getData(cat) {
 
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
-          "afterbegin",
+          "beforeend",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="">
           <h3> Artist: ${neko.artist_name}</h3>
@@ -30,6 +32,4 @@ async function getData(cat) {
     console.log("u suck");
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
-};
-getData(cat);
-
+}
