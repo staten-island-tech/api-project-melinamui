@@ -4,14 +4,14 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-/* DOMSelectors.display.innerHTML="";
-  getData(cat);  
-  load.preventDefault();*/
-
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.getneko.addEventListener("submit", (load) => getData(cat), false);
- 
+DOMSelectors.getneko.addEventListener("submit", function (load) {
+  DOMSelectors.display.innerHTML="";
+  getData(cat);  
+  load.preventDefault();
+});
+
 async function getData(cat) {
   try {
     const response = await fetch(cat);
