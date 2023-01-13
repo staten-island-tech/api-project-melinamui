@@ -6,11 +6,10 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.getneko.addEventListener("submit", function (load) {
-  DOMSelectors.display.innerHTML="";
+/*DOMSelectors.getneko.addEventListener("submit", function () {
   getData(cat);  
-  load.preventDefault();
-});
+ 
+});*/
 
 async function getData(cat) {
   try {
@@ -20,7 +19,8 @@ async function getData(cat) {
       throw error(response);
     } else {
       const data = await response.json();
-
+      
+      DOMSelectors.display.innerHTML="";
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
           "afterbegin",
@@ -30,6 +30,7 @@ async function getData(cat) {
           </div>`
         );
       });
+      data.preventDefault();
     }
   } catch (error) {
     console.log(error);
