@@ -15,10 +15,11 @@ async function getData(cat) {
     } else {
       
       const data = await response.json();    
-      DOMSelectors.getneko.addEventListener("submit", function () {  
+
+      DOMSelectors.getneko.addEventListener("submit", function () {
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
-          "afterbegin",
+          "beforend",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="">
           <h3> Artist: ${neko.artist_name}</h3>
