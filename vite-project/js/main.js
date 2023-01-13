@@ -32,4 +32,4 @@ async function getData(cat) {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 });
-getData(cat);
+
