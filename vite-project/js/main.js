@@ -7,10 +7,11 @@ console.log(DOMSelectors);
 const cat = "https://nekos.best/api/v2/neko";
 
 DOMSelectors.getneko.addEventListener("submit", function (load) {
+  loadNeko();
   load.preventDefault();
 });
 
-async function getData(cat) {
+const loadNeko = async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -21,7 +22,7 @@ async function getData(cat) {
 
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
-          "afterbegin",
+          "beforeend",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="">
           <h3> Artist: ${neko.artist_name}</h3>
@@ -35,5 +36,4 @@ async function getData(cat) {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 };
-getData(cat);
 
