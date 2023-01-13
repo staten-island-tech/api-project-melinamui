@@ -6,7 +6,7 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.form.addEventListener("submit", function (load) {
+DOMSelectors.getneko.addEventListener("submit", function (load) {
   load.preventDefault();
 });
 
