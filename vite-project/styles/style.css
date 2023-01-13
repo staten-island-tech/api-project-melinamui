@@ -12,6 +12,11 @@ body {
   font-family: "Kosugi Maru", sans-serif;
 }
 
+.starting-text {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
 .neko_image {
   width: 500px;
 }
