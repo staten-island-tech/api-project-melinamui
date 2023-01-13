@@ -6,6 +6,8 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
+DOMSelectors.getneko.addEventListener("submit", getData(cat))
+
 async function getData(cat) {
   try {
     const response = await fetch(cat);
@@ -13,20 +15,18 @@ async function getData(cat) {
       console.log(response.status);
       throw error(response);
     } else {
-      
-      const data = await response.json();    
+      const data = await response.json();
 
-      DOMSelectors.getneko.addEventListener("submit", function () {
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
-          "beforend",
+          "afterbegin",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="">
           <h3> Artist: ${neko.artist_name}</h3>
           </div>`
         );
       });
-    })}
+    }
   } catch (error) {
     console.log(error);
     console.log("u suck");
