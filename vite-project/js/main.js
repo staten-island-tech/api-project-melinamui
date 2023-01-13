@@ -2,16 +2,16 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
-//https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg
+//https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
+
+/* DOMSelectors.display.innerHTML="";
+  getData(cat);  
+  load.preventDefault();*/
 
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.getneko.addEventListener("submit", function (load) {
-  DOMSelectors.display.innerHTML="";
-  getData(cat);  
-  load.preventDefault();
-});
-
+DOMSelectors.getneko.addEventListener("submit", (load) => getData(cat), false);
+ 
 async function getData(cat) {
   try {
     const response = await fetch(cat);
