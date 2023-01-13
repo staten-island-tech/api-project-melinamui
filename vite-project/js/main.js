@@ -2,6 +2,8 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
+//https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg
+
 const cat = "https://nekos.best/api/v2/neko";
 
 DOMSelectors.getneko.addEventListener("submit", function (load) {
