@@ -6,8 +6,12 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.form.addEventListener("submit",
-async function getData(cat) {
+DOMSelectors.form.addEventListener("submit", function (load) {
+  loadNeko();
+  load.preventDefault();
+});
+
+const loadNeko = async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -31,5 +35,6 @@ async function getData(cat) {
     console.log("u suck");
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
-});
+};
+getData(cat);
 
