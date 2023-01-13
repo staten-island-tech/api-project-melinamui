@@ -11,7 +11,7 @@ DOMSelectors.form.addEventListener("submit", function (load) {
   load.preventDefault();
 });
 
-const loadNeko = async function getData(cat) {
+let loadNeko = async function getData(cat) {
   try {
     const response = await fetch(cat);
     if (response.status < 200 || response.status > 299) {
@@ -36,5 +36,4 @@ const loadNeko = async function getData(cat) {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 };
-getData(cat);
 
