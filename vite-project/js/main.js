@@ -8,7 +8,6 @@ const cat = "https://nekos.best/api/v2/neko";
 
 DOMSelectors.getneko.addEventListener("submit", function (load) {
   loadNeko();
-  load.preventDefault();
 });
 
 const loadNeko = async function getData(cat) {
