@@ -6,7 +6,7 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-DOMSelectors.getneko.addEventListener("submit",
+DOMSelectors.form.addEventListener("submit",
 async function getData(cat) {
   try {
     const response = await fetch(cat);
