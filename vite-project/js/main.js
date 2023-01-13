@@ -6,11 +6,6 @@ console.log(DOMSelectors);
 
 const cat = "https://nekos.best/api/v2/neko";
 
-/*DOMSelectors.getneko.addEventListener("submit", function () {
-  getData(cat);  
- 
-});*/
-
 async function getData(cat) {
   try {
     const response = await fetch(cat);
@@ -18,9 +13,9 @@ async function getData(cat) {
       console.log(response.status);
       throw error(response);
     } else {
-      const data = await response.json();
       
-      DOMSelectors.display.innerHTML="";
+      const data = await response.json();    
+      DOMSelectors.getneko.addEventListener("submit", function () {  
       data.results.forEach((neko) => {
         document.getElementById("display").insertAdjacentHTML(
           "afterbegin",
@@ -30,8 +25,7 @@ async function getData(cat) {
           </div>`
         );
       });
-      data.preventDefault();
-    }
+    })}
   } catch (error) {
     console.log(error);
     console.log("u suck");
