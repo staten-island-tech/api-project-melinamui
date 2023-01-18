@@ -33,3 +33,15 @@ async function getData() {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
+
+/* Im trying to figure how to make it print only once
+      data.results.forEach((neko) => {
+        document.getElementById("display").insertAdjacentHTML(
+          "beforeend",
+          ` <div class ="card">
+          <img class = "neko_image" src="${neko.url}" alt ="">
+          <h3> Artist: ${neko.artist_name}</h3>
+          </div>`
+        );
+      });
+*/
