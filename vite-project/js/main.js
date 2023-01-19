@@ -11,6 +11,7 @@ function openingText() {
     "beforebegin",
     `<h1 class="lost">I see you've lost your way...</h1>`
   );
+  console.log(openingText);
 }
 setTimeout(openingText, 5000);
 
