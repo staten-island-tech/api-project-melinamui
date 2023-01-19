@@ -4,7 +4,6 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-DOMSelectors.display.innerHTML = "";
 DOMSelectors.getneko.addEventListener("click", getData);
 
 async function getData() {
@@ -18,6 +17,7 @@ async function getData() {
       const data = await response.json();
 
       data.results.forEach((neko) => {
+        DOMSelectors.display.innerHTML = "";
         document.getElementById("display").insertAdjacentHTML(
           "beforeend",
           ` <div class ="card">
