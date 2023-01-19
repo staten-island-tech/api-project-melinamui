@@ -4,6 +4,7 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
+
 function openingText() {
   DOMSelectors.beginning.innerHTML = "";
   DOMSelectors.beginning.insertAdjacentHTML(
