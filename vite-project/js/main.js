@@ -8,11 +8,12 @@ console.log(DOMSelectors);
 function openingText() {
   DOMSelectors.beginning.innerHTML = "";
   DOMSelectors.beginning.insertAdjacentHTML(
-    "beforeend",
+    "beforebegin",
     `<h1 class="lost">I see you've lost your way...</h1>`
   );
 }
-setTimeout(openingText, 10000);
+const showText = setTimeout(openingText, 10000);
+showText();
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
