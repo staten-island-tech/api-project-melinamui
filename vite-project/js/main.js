@@ -30,7 +30,7 @@ async function getData() {
         document.getElementById("display").insertAdjacentHTML(
           "beforeend",
           ` <div class ="card">
-          <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by the artist, ${neko.artist_name}">
+          <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
           <h3> Artist: ${neko.artist_name}</h3>
           </div>`
         );
