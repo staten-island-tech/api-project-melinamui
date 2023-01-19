@@ -12,8 +12,7 @@ function openingText() {
     `<h1 class="lost">I see you've lost your way...</h1>`
   );
 }
-const showText = setTimeout(openingText, 10000);
-showText();
+setTimeout(openingText, 5000);
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
