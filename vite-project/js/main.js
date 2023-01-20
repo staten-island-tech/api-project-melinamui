@@ -7,10 +7,9 @@ console.log(DOMSelectors);
 
 function openingText() {
   DOMSelectors.beginning.innerHTML = "";
+  let lost = "<h1>I see you've lost your way...</h1>"
   DOMSelectors.beginning.insertAdjacentHTML(
-    "beforebegin",
-    `<h1 class="lost">I see you've lost your way...</h1>`
-  );
+    "beforebegin", lost);
   console.log(openingText);
 }
 setTimeout(openingText, 5000);
