@@ -4,7 +4,6 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-
 /*const openingText = function() {
   DOMSelectors.beginning.innerHTML = "";
   let lost = "<h1>I see you've lost your way...</h1>"
@@ -14,8 +13,20 @@ console.log(DOMSelectors);
 }
 setTimeout(openingText, 5000);*/
 
-DOMSelectors.display.insertAdjacentHTML("beforeend",
-`<h2 class="lost">I see you've lost your way...</h2>`);
+setTimeout(() => {
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h2 class="lost">I see you've lost your way...</h2>`
+  );
+}, 4000);
+
+setTimeout(() => {
+  DOMSelectors.beginning.innerHTML = "";
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h1 class="lost">Follow Me.</h1>`
+  );
+}, 9000);
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
