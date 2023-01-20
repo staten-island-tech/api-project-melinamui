@@ -5,11 +5,11 @@ console.log(DOMSelectors);
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
 
-function openingText() {
+const openingText = function() {
   DOMSelectors.beginning.innerHTML = "";
   let lost = "<h1>I see you've lost your way...</h1>"
   DOMSelectors.beginning.insertAdjacentHTML(
-    "beforebegin", lost);
+    "beforeend", lost);
   console.log(openingText);
 }
 setTimeout(openingText, 5000);
