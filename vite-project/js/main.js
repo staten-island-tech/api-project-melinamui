@@ -14,7 +14,7 @@ console.log(DOMSelectors);
 }
 setTimeout(openingText, 5000);*/
 
-DOMSelectors.beginning.insertAdjacentHTML("beforeend",
+DOMSelectors.display.insertAdjacentHTML("beforeend",
 `<h2 class="lost">I see you've lost your way...</h2>`);
 
 DOMSelectors.getneko.addEventListener("click", getData);
