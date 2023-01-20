@@ -5,14 +5,19 @@ console.log(DOMSelectors);
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
 
-const openingText = function() {
+/*const openingText = function() {
   DOMSelectors.beginning.innerHTML = "";
   let lost = "<h1>I see you've lost your way...</h1>"
   DOMSelectors.beginning.insertAdjacentHTML(
     "beforeend", lost);
   console.log(openingText);
 }
-setTimeout(openingText, 5000);
+setTimeout(openingText, 5000);*/
+let lost = "<h1>I see you've lost your way...</h1>"
+const insertText = DOMSelectors.beginning.insertAdjacentHTML(
+  "beforeend", lost);
+  setTimeout(insertText, 5000);
+console.log(insertText);
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
