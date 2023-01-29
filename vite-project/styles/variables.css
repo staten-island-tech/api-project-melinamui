@@ -11,6 +11,7 @@
   --primary: var(--pale-pink);
   --secondary: var(--dark-pink);
   --text: var(--black);
+  --text2: var(--white);
 
   /*Typography */
   --h1: 7.594rem;
