@@ -16,7 +16,7 @@ setTimeout(openingText, 5000);*/
 setTimeout(() => {
   DOMSelectors.beginning.insertAdjacentHTML(
     "beforeend",
-    `<h2 class="lost">I see you've lost your way...</h2>`
+    `<h2 class="lost">You look like you have no friends.</h2>`
   );
 }, 4000);
 
@@ -24,20 +24,24 @@ setTimeout(() => {
   DOMSelectors.beginning.innerHTML = "";
   DOMSelectors.beginning.insertAdjacentHTML(
     "beforeend",
-    `<h1 class="lost">Follow Me.</h1>`
+    `<h1 class="lost">Let me help ;)</h1>`
   );
 }, 9000);
 
+
+/*
 setTimeout(() => {
   DOMSelectors.beginning.innerHTML = "";
   DOMSelectors.addButton.insertAdjacentHTML(
     "beforeend",
     `<button class="btn" id="getneko">Get Nekogirl!</button>`
   );
-  DOMSelectors.getneko.addEventListener("click", getData);  
-}, 13000)
+ 
+}, 13000)*/
 
-function spawnButton(x) {
+//DOMSelectors.getneko.addEventListener("click", getData);  
+
+function spawnNeko(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(x);
@@ -54,9 +58,9 @@ async function getData() {
       throw error(response);
     } else {
       //const data = await response.json();
-      const data = await spawnButton();
+      const data = await spawnNeko();
       console.log(x);
-      
+
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
         document.getElementById("display").insertAdjacentHTML(
@@ -74,3 +78,4 @@ async function getData() {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
+getData();
