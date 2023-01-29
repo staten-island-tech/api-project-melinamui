@@ -56,7 +56,6 @@ async function getData() {
         );
       });
     }
-    DOMSelectors.getneko.addEventListener("click", getData); 
     displayNeko(spawn);
     }
   } catch (error) {
@@ -66,6 +65,7 @@ async function getData() {
   }
 }
 getData();
+DOMSelectors.getneko.addEventListener("click", getData); 
 
 setTimeout(() => {
   DOMSelectors.beginning.insertAdjacentHTML(
