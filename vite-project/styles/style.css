@@ -16,13 +16,12 @@ body {
   font-family: "Share Tech Mono", monospace;
   text-align: center;
   font-size: 5vh;
-  display: flex;
-  align-items: center;
+  margin-top: 20%;
 }
 
 #getneko {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .neko_image {

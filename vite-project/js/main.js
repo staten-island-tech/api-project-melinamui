@@ -29,8 +29,8 @@ setTimeout(() => {
 }, 9000);
 
 setTimeout(() => {
-  DOMSelectors.display.innerHTML = "";
-  DOMSelectors.display.insertAdjacentHTML(
+  DOMSelectors.app.innerHTML = "";
+  DOMSelectors.app.insertAdjacentHTML(
     "beforeend",
     `<button class="btn" id="getneko">Get Nekogirl!</button>`
   );
