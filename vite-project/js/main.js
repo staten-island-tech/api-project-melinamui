@@ -34,7 +34,7 @@ setTimeout(() => {
     "beforeend",
     `<button class="btn" id="getneko">Get Nekogirl!</button>`
   );
-}, 130000);
+}, 13000);
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
