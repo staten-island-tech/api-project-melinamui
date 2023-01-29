@@ -36,6 +36,8 @@ setTimeout(() => {
   );
 }, 13000);
 
+setTimeout(getData, 13000);
+
 DOMSelectors.getneko.addEventListener("click", getData);
 
 async function getData() {
