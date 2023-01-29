@@ -34,9 +34,8 @@ const spawnButton = setTimeout(() => {
     "beforeend",
     `<button class="btn" id="getneko">Get Nekogirl!</button>`
   );
+  DOMSelectors.getneko.addEventListener("click", getData);
 }, 13000);
-
-DOMSelectors.getneko.addEventListener("click", getData);
 
 async function getData() {
   const cat = "https://nekos.best/api/v2/neko";
