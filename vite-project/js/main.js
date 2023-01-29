@@ -34,8 +34,8 @@ setTimeout(() => {
     "beforeend",
     `<button class="btn" id="reject">Reject :(</button>`
   );
-  DOMSelectors.reject.addEventListener("click", getData); 
-}, 19000);
+  document.getElementById("reject").addEventListener("click", getData); 
+}, 19005);
 
 
 async function getData() {
