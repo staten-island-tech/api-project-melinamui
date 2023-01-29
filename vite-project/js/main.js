@@ -29,8 +29,8 @@ setTimeout(() => {
 }, 9000);
 
 const spawnButton = setTimeout(() => {
-  DOMSelectors.app.innerHTML = "";
-  DOMSelectors.app.insertAdjacentHTML(
+  DOMSelectors.beginning.innerHTML = "";
+  DOMSelectors.addButton.insertAdjacentHTML(
     "beforeend",
     `<button class="btn" id="getneko">Get Nekogirl!</button>`
   );
