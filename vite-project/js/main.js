@@ -50,8 +50,6 @@ async function getData() {
           <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
           <h2> Artist: ${neko.artist_name}</h2>
           </div>
-          <h2>What do you think?</h2>
-          <button class="btn" id="getneko">Reject</button>
           `
         );
       });
