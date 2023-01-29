@@ -57,7 +57,7 @@ async function getData() {
           <h2> Artist: ${neko.artist_name}</h2>
           </div>
           <h1> What do you think? </h1>
-          <button class="btn" id="reject">Reject</button
+          <button class="btn" id="reject">Next!</button>
           `
         );
       });
@@ -70,7 +70,6 @@ async function getData() {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
-getData();
 
 
 setTimeout(() => {
