@@ -4,15 +4,6 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-/*const openingText = function() {
-  DOMSelectors.beginning.innerHTML = "";
-  let lost = "<h1>I see you've lost your way...</h1>"
-  DOMSelectors.beginning.insertAdjacentHTML(
-    "beforeend", lost);
-  console.log(openingText);
-}
-setTimeout(openingText, 5000);*/
-
 setTimeout(() => {
   DOMSelectors.beginning.insertAdjacentHTML(
     "beforeend",
@@ -27,6 +18,16 @@ setTimeout(() => {
     `<h1 class="lost">Let me help ;)</h1>`
   );
 }, 9000);
+
+setTimeout(() => {
+  if (document.body.classList.contains("micro")) {
+    document.body.classList.add("cafe");
+    document.body.classList.remove("micro");
+  } else {
+    document.body.classList.add("micro");
+    document.body.classList.remove("cafe");
+  }
+}, 12000);
 
 
 /*
@@ -45,7 +46,7 @@ function spawnNeko(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(x);
-    }, 13000);
+    }, 12000);
   });
 }
 
@@ -63,6 +64,7 @@ async function getData() {
       const spawn = await spawnNeko();
 
       function displayNeko(){
+      DOMSelectors.beginning.innerHTML ="";
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
         document.getElementById("display").insertAdjacentHTML(

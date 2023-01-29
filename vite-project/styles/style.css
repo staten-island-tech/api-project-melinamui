@@ -6,10 +6,19 @@ body,
 }*/
 
 body {
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+.micro {
   background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Kosugi Maru", sans-serif;
+}
+
+.cafe {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #beginning {
