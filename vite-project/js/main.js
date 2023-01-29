@@ -1,6 +1,7 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
+import "./reject";
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
@@ -50,6 +51,7 @@ async function getData() {
           <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
           <h2> Artist: ${neko.artist_name}</h2>
           </div>
+          <h1> What do you think? </h1>
           `
         );
       });

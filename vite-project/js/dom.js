@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  getneko: document.getElementById("getneko"),
+  reject: document.getElementById("reject"),
   display: document.getElementById("display"),
   beginning: document.getElementById("beginning"),
   welcome: document.getElementsByClassName("welcome"),
