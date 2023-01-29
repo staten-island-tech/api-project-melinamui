@@ -61,6 +61,11 @@ async function getData() {
       document.getElementById("perfect").addEventListener("click", function(){
         DOMSelectors.display.innerHTML = "";
         DOMSelectors.beginning.innerHTML = "";
+        DOMSelectors.beginning.insertAdjacentHTML(
+          "beforeend",
+          `<h1>You: Wow this seems so surreal...</h1>
+          `
+         )
         if (document.body.classList.contains("cafe")) {
           document.body.classList.add("ceiling");
           document.body.classList.remove("cafe");
@@ -70,7 +75,7 @@ async function getData() {
         }
        DOMSelectors.beginning.insertAdjacentHTML(
         "beforeend",
-        `<h1>Of course it was a dream.</h1>
+        `<h1>...</h1>
         <h4>The End.</h4>`
        )
       });
