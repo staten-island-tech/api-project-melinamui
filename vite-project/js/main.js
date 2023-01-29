@@ -28,7 +28,8 @@ setTimeout(() => {
   );
 }, 9000);
 
-const spawnButton = setTimeout(() => {
+function spawnButton() {
+  setTimeout(() => {
   DOMSelectors.beginning.innerHTML = "";
   DOMSelectors.addButton.insertAdjacentHTML(
     "beforeend",
@@ -36,6 +37,7 @@ const spawnButton = setTimeout(() => {
   );
   DOMSelectors.getneko.addEventListener("click", getData);
 }, 13000);
+}
 
 async function getData() {
   const cat = "https://nekos.best/api/v2/neko";
