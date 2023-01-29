@@ -70,7 +70,6 @@ async function getData() {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
-getData();
 
 
 setTimeout(() => {
