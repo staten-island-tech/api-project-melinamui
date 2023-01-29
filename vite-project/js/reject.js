@@ -8,8 +8,9 @@ setTimeout(() => {
     );
   }, 19000);
 
-  DOMSelectors.reject.addEventListener("click", getData);  
-  async function getData() {
+  DOMSelectors.reject.addEventListener("click", getAnother);  
+  
+  async function getAnother() {
     const cat = "https://nekos.best/api/v2/neko";
     try {
       const response = await fetch(cat);
@@ -18,8 +19,7 @@ setTimeout(() => {
         throw error(response);
       } else {
         const data = await response.json();
-  
-        function displayNeko(){
+
         data.results.forEach((neko) => {
           DOMSelectors.display.innerHTML = "";
           document.getElementById("display").insertAdjacentHTML(
@@ -35,12 +35,9 @@ setTimeout(() => {
           );
         });
       }
-      displayNeko(spawn);
-      }
     } catch (error) {
       console.log(error);
       console.log("u suck");
       document.getElementById("display").textContent = "sorry, no neko for u";
     }
   }
-  getData();
