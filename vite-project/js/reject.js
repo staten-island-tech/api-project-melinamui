@@ -8,8 +8,15 @@ setTimeout(() => {
     );
   }, 19000);
 
+function spawnAnother(x) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(x);
+      }, 19000);
+    });
+  }
+
   DOMSelectors.reject.addEventListener("click", getAnother);  
-  
   async function getAnother() {
     const cat = "https://nekos.best/api/v2/neko";
     try {
@@ -19,7 +26,9 @@ setTimeout(() => {
         throw error(response);
       } else {
         const data = await response.json();
-
+        const spawn = await spawnAnother();
+  
+        function displayAnother(){
         data.results.forEach((neko) => {
           DOMSelectors.display.innerHTML = "";
           document.getElementById("display").insertAdjacentHTML(
@@ -34,6 +43,8 @@ setTimeout(() => {
             `
           );
         });
+      }
+      displayAnother(spawn);
       }
     } catch (error) {
       console.log(error);
