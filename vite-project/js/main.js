@@ -59,7 +59,6 @@ async function getData() {
     } else {
       //const data = await response.json();
       const data = await spawnNeko();
-      console.log(x);
 
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
