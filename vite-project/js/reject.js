@@ -1,3 +1,5 @@
+import { DOMSelectors } from "./dom";
+
 setTimeout(() => {
     DOMSelectors.end.innerHTML = "";
     DOMSelectors.end.insertAdjacentHTML(
