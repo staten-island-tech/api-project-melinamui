@@ -58,8 +58,11 @@ async function getData() {
       throw error(response);
     } else {
       //const data = await response.json();
-      const data = await spawnNeko();
+      //const spawn = await spawnNeko();
+      const data = await response.json();
+      const spawn = await spawnNeko();
 
+      function displayNeko(){
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
         document.getElementById("display").insertAdjacentHTML(
@@ -70,6 +73,8 @@ async function getData() {
           </div>`
         );
       });
+    }
+    displayNeko(spawn);
     }
   } catch (error) {
     console.log(error);
