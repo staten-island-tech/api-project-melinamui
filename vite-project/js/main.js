@@ -29,12 +29,7 @@ function spawnNeko(x) {
   });
 }
 
-setTimeout(() => {
-  DOMSelectors.end.insertAdjacentHTML(
-    "beforeend",
-    `<button class="btn" id="reject">Reject :(</button>`
-  );
-}, 19000);
+
 document.getElementById("reject").addEventListener("click", getData); 
 
 
@@ -61,6 +56,7 @@ async function getData() {
           <h2> Artist: ${neko.artist_name}</h2>
           </div>
           <h1> What do you think? </h1>
+          <button class="btn" id="reject">Reject :(</button>
           `
         );
       });
