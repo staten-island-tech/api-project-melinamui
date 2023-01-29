@@ -24,7 +24,7 @@ function spawnNeko(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(x);
-    }, 17000);
+    }, 19000);
   });
 }
 
@@ -76,7 +76,7 @@ setTimeout(() => {
     "beforeend",
     `<h1 class="lost">Let me help ;)</h1>`
   );
-}, 9000);
+}, 8000);
 
 setTimeout(() => {
   if (document.body.classList.contains("micro")) {
@@ -86,7 +86,7 @@ setTimeout(() => {
     document.body.classList.add("micro");
     document.body.classList.remove("cafe");
   }
-}, 13000);
+}, 12000);
 
 setTimeout(() => {
   DOMSelectors.beginning.innerHTML = "";
@@ -94,7 +94,7 @@ setTimeout(() => {
     "beforeend",
     `<h1 class="lost">Look we're here.</h1>`
   );
-}, 13000);
+}, 12000);
 
 setTimeout(() => {
   DOMSelectors.beginning.insertAdjacentHTML(
@@ -109,7 +109,7 @@ setTimeout(() => {
     "beforeend",
     `<h1 class="lost">Here she is!</h1>`
   );
-}, 17000);
+}, 19000);
 
   
 
