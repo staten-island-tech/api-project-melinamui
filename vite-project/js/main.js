@@ -64,7 +64,8 @@ async function getData() {
         DOMSelectors.beginning.insertAdjacentHTML(
           "beforeend",
           `<h1>Aww, what a shame.</h1>
-          <h2>How about her?</h2>`
+          <h2>How about her?</h2>
+          <h3>Wait a bit, she's running here >:(</h3>`
         )}
         ); 
     }
