@@ -25,7 +25,7 @@ function spawnNeko(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(x);
-    }, 19000);
+    }, 18000);
   });
 }
 
@@ -60,6 +60,7 @@ async function getData() {
       document.getElementById("reject").addEventListener("click", getData);
       document.getElementById("reject").addEventListener("click", function() {
         DOMSelectors.display.innerHTML = "";
+        DOMSelectors.beginning.innerHTML = "";
         DOMSelectors.beginning.insertAdjacentHTML(
           "beforeend",
           `<h1>Aww, what a shame.</h1>
@@ -124,7 +125,7 @@ setTimeout(() => {
     "beforeend",
     `<h1 class="lost">Here she is!</h1>`
   );
-}, 19000);
+}, 18000);
 
   
 
