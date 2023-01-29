@@ -15,8 +15,11 @@ function spawnAnother(x) {
       }, 19000);
     });
   }
+     
+setTimeout(() => {
+    DOMSelectors.reject.addEventListener("click", getAnother); 
+}, 19000);
 
-  DOMSelectors.reject.addEventListener("click", getAnother);  
   async function getAnother() {
     const cat = "https://nekos.best/api/v2/neko";
     try {
