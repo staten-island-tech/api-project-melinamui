@@ -26,10 +26,10 @@ body {
 }
 
 .ceiling {
-  background-image: url("https://media.istockphoto.com/id/925770730/photo/white-fan-blades-with-shadows.jpg?s=612x612&w=0&k=20&c=LxjVcd0Z4e15cKxnOSOGbuLiWcH6FWExEaFd4aD8axY=");
+  background-image: url("https://images.pond5.com/ceiling-fan-night-slowmotion-footage-034316980_iconl.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--text);
+  color: var(--text2);
 }
 
 #beginning {
