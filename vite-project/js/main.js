@@ -31,7 +31,7 @@ function spawnNeko(x) {
 
 setTimeout(() => {
   DOMSelectors.reject.addEventListener("click", getData); 
-}, 19000);
+}, 19005);
 
 
 async function getData() {
@@ -70,6 +70,7 @@ async function getData() {
     document.getElementById("display").textContent = "sorry, no neko for u";
   }
 }
+getData();
 
 
 setTimeout(() => {
