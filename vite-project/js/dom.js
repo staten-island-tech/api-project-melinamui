@@ -4,5 +4,6 @@ const DOMSelectors = {
   beginning: document.getElementById("beginning"),
   welcome: document.getElementsByClassName("welcome"),
   lost: document.getElementsByClassName("lost"),
+  app: document.getElementById("app"),
 };
 export { DOMSelectors };
