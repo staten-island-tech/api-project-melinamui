@@ -42,7 +42,6 @@ async function getData() {
       const spawn = await spawnNeko();
 
       function displayNeko(){
-      DOMSelectors.beginning.innerHTML ="";
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
         document.getElementById("display").insertAdjacentHTML(
