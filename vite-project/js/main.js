@@ -4,7 +4,7 @@ console.log(DOMSelectors);
 import "./reject";
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
-
+//https://media.istockphoto.com/id/925770730/photo/white-fan-blades-with-shadows.jpg?s=612x612&w=0&k=20&c=LxjVcd0Z4e15cKxnOSOGbuLiWcH6FWExEaFd4aD8axY=
 
 //reject no thanks
 //okay how about this one
@@ -54,9 +54,27 @@ async function getData() {
           </div>
           <h1> What do you think? </h1>
           <button class="btn" id="reject">Reject :(</button>
+          <button class="btn" id="perfect"> Perfect :O</button>
           `
         );
       });
+      document.getElementById("perfect").addEventListener("click", function(){
+        DOMSelectors.display.innerHTML = "";
+        DOMSelectors.beginning.innerHTML = "";
+        if (document.body.classList.contains("cafe")) {
+          document.body.classList.add("ceiling");
+          document.body.classList.remove("cafe");
+        } else {
+          document.body.classList.add("cafe");
+          document.body.classList.remove("ceiling");
+        }
+       DOMSelectors.beginning.insertAdjacentHTML(
+        "beforeend",
+        `<h1>Of course it was a dream.</h1>
+        <h4>The End.</h4>`
+       )
+      });
+
       document.getElementById("reject").addEventListener("click", getData);
       document.getElementById("reject").addEventListener("click", function() {
         DOMSelectors.display.innerHTML = "";
