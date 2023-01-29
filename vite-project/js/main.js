@@ -65,7 +65,7 @@ async function getData() {
   }
 }
 getData();
-DOMSelectors.getneko.addEventListener("click", getData); 
+
 
 setTimeout(() => {
   DOMSelectors.beginning.insertAdjacentHTML(
