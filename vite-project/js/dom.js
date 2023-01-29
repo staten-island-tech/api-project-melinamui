@@ -6,5 +6,6 @@ const DOMSelectors = {
   lost: document.getElementsByClassName("lost"),
   app: document.getElementById("app"),
   addButton: document.getElementById("addButton"),
+  end: document.getElementById("end"),
 };
 export { DOMSelectors };
