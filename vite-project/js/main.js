@@ -29,6 +29,15 @@ function spawnNeko(x) {
   });
 }
 
+document.getElementById("reject").addEventListener("click", function() {
+DOMSelectors.display.innerHTML = "";
+DOMSelectors.beginning.insertAdjacentHTML(
+  "beforeend",
+  `<h1>Aww, what a shame.</h1>
+  <h2>How about her?</h2>`
+)}
+);
+
 async function getData() {
   const cat = "https://nekos.best/api/v2/neko";
   try {
