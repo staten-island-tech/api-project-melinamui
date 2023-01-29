@@ -49,10 +49,14 @@ async function getData() {
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
           <h2> Artist: ${neko.artist_name}</h2>
-          </div>`
+          </div>
+          <h2>What do you think?</h2>
+          <button class="btn" id="getneko">Reject</button>
+          `
         );
       });
     }
+    DOMSelectors.getneko.addEventListener("click", getData); 
     displayNeko(spawn);
     }
   } catch (error) {
