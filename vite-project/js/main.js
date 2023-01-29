@@ -28,6 +28,14 @@ setTimeout(() => {
   );
 }, 9000);
 
+setTimeout(() => {
+  DOMSelectors.display.innerHTML = "";
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforeend",
+    `<button class="btn" id="getneko">Get Nekogirl!</button>`
+  );
+}, 130000);
+
 DOMSelectors.getneko.addEventListener("click", getData);
 
 async function getData() {
