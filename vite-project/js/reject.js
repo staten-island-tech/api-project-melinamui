@@ -1,5 +1,5 @@
 import { DOMSelectors } from "./dom";
-
+/*
 setTimeout(() => {
     DOMSelectors.end.innerHTML = "";
     DOMSelectors.end.insertAdjacentHTML(
@@ -52,3 +52,4 @@ function spawnAnother(x) {
       document.getElementById("display").textContent = "sorry, no neko for u";
     }
   }
+*/

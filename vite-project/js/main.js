@@ -29,6 +29,11 @@ function spawnNeko(x) {
   });
 }
 
+setTimeout(() => {
+  DOMSelectors.reject.addEventListener("click", getData); 
+}, 19000);
+
+
 async function getData() {
   const cat = "https://nekos.best/api/v2/neko";
   try {
@@ -52,6 +57,7 @@ async function getData() {
           <h2> Artist: ${neko.artist_name}</h2>
           </div>
           <h1> What do you think? </h1>
+          <button class="btn" id="reject">Reject</button
           `
         );
       });
