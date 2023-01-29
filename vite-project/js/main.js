@@ -31,7 +31,7 @@ function spawnNeko(x) {
 
 setTimeout(() => {
   DOMSelectors.reject.addEventListener("click", getData); 
-}, 19005);
+}, 20000);
 
 
 async function getData() {
