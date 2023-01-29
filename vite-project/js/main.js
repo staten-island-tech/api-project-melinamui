@@ -4,31 +4,9 @@ console.log(DOMSelectors);
 
 //https://cdnb.artstation.com/p/assets/images/images/035/536/863/large/rasel-moe-world3.jpg?1615228697
 
-setTimeout(() => {
-  DOMSelectors.beginning.insertAdjacentHTML(
-    "beforeend",
-    `<h2 class="lost">You look like you have no friends.</h2>`
-  );
-}, 4000);
 
-setTimeout(() => {
-  DOMSelectors.beginning.innerHTML = "";
-  DOMSelectors.beginning.insertAdjacentHTML(
-    "beforeend",
-    `<h1 class="lost">Let me help ;)</h1>`
-  );
-}, 9000);
-
-setTimeout(() => {
-  if (document.body.classList.contains("micro")) {
-    document.body.classList.add("cafe");
-    document.body.classList.remove("micro");
-  } else {
-    document.body.classList.add("micro");
-    document.body.classList.remove("cafe");
-  }
-}, 12000);
-
+//reject no thanks
+//okay how about this one
 
 /*
 setTimeout(() => {
@@ -46,7 +24,7 @@ function spawnNeko(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(x);
-    }, 12000);
+    }, 17000);
   });
 }
 
@@ -85,3 +63,54 @@ async function getData() {
   }
 }
 getData();
+
+setTimeout(() => {
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h2 class="lost">You look like you have no friends.</h2>`
+  );
+}, 4000);
+
+setTimeout(() => {
+  DOMSelectors.beginning.innerHTML = "";
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h1 class="lost">Let me help ;)</h1>`
+  );
+}, 9000);
+
+setTimeout(() => {
+  if (document.body.classList.contains("micro")) {
+    document.body.classList.add("cafe");
+    document.body.classList.remove("micro");
+  } else {
+    document.body.classList.add("micro");
+    document.body.classList.remove("cafe");
+  }
+}, 13000);
+
+setTimeout(() => {
+  DOMSelectors.beginning.innerHTML = "";
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h1 class="lost">Look we're here.</h1>`
+  );
+}, 13000);
+
+setTimeout(() => {
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h2 class="lost">Let me introduce you to my friend!</h2>`
+  );
+}, 15000);
+
+setTimeout(() => {
+  DOMSelectors.beginning.innerHTML = "";
+  DOMSelectors.beginning.insertAdjacentHTML(
+    "beforeend",
+    `<h1 class="lost">Here she is!</h1>`
+  );
+}, 17000);
+
+  
+
