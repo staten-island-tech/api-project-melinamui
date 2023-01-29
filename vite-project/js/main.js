@@ -57,24 +57,7 @@ async function getData() {
         );
       });
     }
-
-    function displayAnother(){
-      data.results.forEach((neko) =>{
-        document.getElementById("display").insertAdjacentHTML(
-          "beforeend",
-          ` 
-          <h1>Aww, that's a shame. How about her?</h1>
-          <div class ="card">
-          <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
-          <h2> Artist: ${neko.artist_name}</h2>
-          </div>
-          <h1> What do you think? </h1>
-          <button class="btn" id="reject">Reject :(</button>
-          `
-        );
-      });
-    }
-    document.getElementById("reject").addEventListener("click", displayAnother); 
+    document.getElementById("reject").addEventListener("click", displayNeko); 
     displayNeko(spawn);
     }
   } catch (error) {
