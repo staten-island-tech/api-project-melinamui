@@ -28,7 +28,13 @@ setTimeout(() => {
   );
 }, 9000);
 
-
+const spawnButton = setTimeout(() => {
+  DOMSelectors.app.innerHTML = "";
+  DOMSelectors.app.insertAdjacentHTML(
+    "beforeend",
+    `<button class="btn" id="getneko">Get Nekogirl!</button>`
+  );
+}, 13000);
 
 DOMSelectors.getneko.addEventListener("click", getData);
 
@@ -41,13 +47,7 @@ async function getData() {
       throw error(response);
     } else {
       //const data = await response.json();
-      const data = await setTimeout(() => {
-        DOMSelectors.app.innerHTML = "";
-        DOMSelectors.app.insertAdjacentHTML(
-          "beforeend",
-          `<button class="btn" id="getneko">Get Nekogirl!</button>`
-        );
-      }, 13000);
+      const data = await spawnButton();
 
       data.results.forEach((neko) => {
         DOMSelectors.display.innerHTML = "";
