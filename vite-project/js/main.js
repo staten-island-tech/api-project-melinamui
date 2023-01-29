@@ -48,7 +48,7 @@ async function getData() {
           "beforeend",
           ` <div class ="card">
           <img class = "neko_image" src="${neko.url}" alt ="This is a cute cat girl drawing made by artist, ${neko.artist_name}">
-          <h3> Artist: ${neko.artist_name}</h3>
+          <h2> Artist: ${neko.artist_name}</h2>
           </div>`
         );
       });
