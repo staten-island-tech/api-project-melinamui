@@ -56,8 +56,8 @@ async function getData() {
           `
         );
       });
-      document.getElementById("reject").addEventListener("click", displayNeko); 
     }
+    document.getElementById("reject").addEventListener("click", displayNeko); 
     displayNeko(spawn);
     }
   } catch (error) {
