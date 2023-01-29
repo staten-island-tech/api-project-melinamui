@@ -29,10 +29,6 @@ function spawnNeko(x) {
   });
 }
 
-
-document.getElementById("reject").addEventListener("click", getData); 
-
-
 async function getData() {
   const cat = "https://nekos.best/api/v2/neko";
   try {
@@ -60,6 +56,7 @@ async function getData() {
           `
         );
       });
+      document.getElementById("reject").addEventListener("click", getData); 
     }
     displayNeko(spawn);
     }
