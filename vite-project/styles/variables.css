@@ -34,9 +34,9 @@ h6 {
 .btn:link,
 .btn:visited {
   font-family: "Kosugi Maru", sans-serif;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   display: inline-block;
-  margin: 1rem;
+  margin: 2vh;
   font-size: 2rem;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -55,6 +55,6 @@ h6 {
 
 .btn {
   color: var(--secondary);
-  background-color: #e8fbff;
-  border-color: var(--light-blue);
+  background-color: var(--light-pink);
+  border-color: purple;
 }

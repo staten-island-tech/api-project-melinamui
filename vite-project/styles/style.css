@@ -22,13 +22,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--text2);
-  text-shadow: 3px 2px black;
+  text-shadow: 5px 2px black;
 }
 
 .ceiling {
   background-image: url("https://media.istockphoto.com/id/925770730/photo/white-fan-blades-with-shadows.jpg?s=612x612&w=0&k=20&c=LxjVcd0Z4e15cKxnOSOGbuLiWcH6FWExEaFd4aD8axY=");
-  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text);
 }
 
@@ -64,4 +65,42 @@ body {
   margin: 3rem auto;
   align-items: center;
   padding: 30px;
+}
+
+@media all and (max-width: 1400px) {
+  .ceiling {
+    background-size: 200vh;
+  }
+  .micro {
+    background-size: 200vh;
+  }
+  .cafe {
+    background-size: 500vh;
+  }
+}
+
+/*Ipad*/
+@media all and (max-width: 1024px) {
+  .ceiling {
+    background-size: 150vh;
+  }
+  .micro {
+    background-size: 150vh;
+  }
+  .cafe {
+    background-size: 400vh;
+  }
+}
+
+/*Phone*/
+@media all and (max-width: 600px) {
+  .ceiling {
+    background-size: 100vh;
+  }
+  .micro {
+    background-size: 100vh;
+  }
+  .cafe {
+    background-size: 300vh;
+  }
 }
